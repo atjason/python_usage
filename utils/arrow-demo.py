@@ -1,3 +1,5 @@
+# https://arrow.readthedocs.io
+
 import arrow
 from datetime import datetime
 

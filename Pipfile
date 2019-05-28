@@ -9,6 +9,7 @@ pylint = "*"
 [packages]
 requests = "*"
 arrow = "*"
+aiohttp = "*"
 
 [requires]
 python_version = "3.7"

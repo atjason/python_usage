@@ -34,18 +34,17 @@ async def test_cookies(http_session):
   cookies = {'key1': 'value1'}
   url = 'https://postman-echo.com/cookies'
   async with http_session.get(url, cookies=cookies) as resp:
-    print(await resp.text())
     j = await resp.json()
     j['cookies'] # '{"key1":"value1"}'
 
 async def test_timeout(http_session):
-  pass
-  # try:
-  #   url = 'https://postman-echo.com/cookies'
-  #   async with http_session.get(url, timeout=0.001) as resp:
-  #     pass
-  # except requests.exceptions.Timeout:
-  #   print('Timeout')
+  try:
+    url = 'https://postman-echo.com/cookies'
+    timeout = aiohttp.ClientTimeout(total=0.01)
+    async with http_session.get(url, timeout=timeout):
+      pass
+  except asyncio.TimeoutError:
+    print('Time out.')
 
 async def main():
   http_session = aiohttp.ClientSession()

@@ -1,3 +1,13 @@
 {
-  "python.pythonPath": "~/.local/share/virtualenvs/python_usage-UfP3e_R2/bin/python"
+  "python.pythonPath": "~/.local/share/virtualenvs/python_usage-UfP3e_R2/bin/python",
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./test/",
+    "-p",
+    "*.py"
+  ],
+  "python.testing.pyTestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.unittestEnabled": true
 }

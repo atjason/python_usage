@@ -1,4 +1,10 @@
 
+# enumerate
+arr = ['a', 'b', 'c']
+for char in arr:
+  print(char)
+for index, char in enumerate(arr):
+  print(index, char)
 
 # filter
 arr = [0, 1, 2]

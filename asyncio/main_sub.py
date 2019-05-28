@@ -23,10 +23,15 @@ async def sub_fn1():
 async def sub_fn2(loop):
   # 2. Run in a custom thread pool:
   print('sub_fn2 start')
-  with concurrent.futures.ThreadPoolExecutor() as pool:
-    await loop.run_in_executor(pool, blocking_io)
-    await loop.run_in_executor(pool, cpu_bound)
-    print('sub_fn2 done')
+
+  await loop.run_in_executor(None, blocking_io)
+  await loop.run_in_executor(None, cpu_bound)
+
+  # with concurrent.futures.ThreadPoolExecutor() as pool:
+  #   await loop.run_in_executor(pool, blocking_io)
+  #   await loop.run_in_executor(pool, cpu_bound)
+
+  print('sub_fn2 done')
 
 async def main():
   loop = asyncio.get_running_loop()

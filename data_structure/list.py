@@ -24,3 +24,8 @@ arr.sort() # [1, 2, 3]
 arr.sort(reverse=True) # [3, 2, 1]
 arr.sort(key=lambda x: -x) # [3, 2, 1]
 ['A', 'b', 'c'].sort(key=str.lower)
+
+# max/min
+d = [{'age': 3}, {'age': 4}]
+max(d, key=lambda p: p['age'])['age'] # 4
+min(d, key=lambda p: p['age'])['age'] # 3

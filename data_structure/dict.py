@@ -17,3 +17,6 @@ str(dict) # "{'Name': 'Tom', 'Age': 3}"
 dict.update({'Sex': 'Woman'}) # Merge 2 dict.
 
 dict.pop('Sex') # raise error has no such key.
+
+for k,v in dict.items():
+  print(k, v)

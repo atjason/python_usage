@@ -1,5 +1,5 @@
 
-from os import remove
+import os
 
 filename = 'file/tmp.txt'
 with open(filename, 'w') as f:
@@ -7,6 +7,7 @@ with open(filename, 'w') as f:
 
 with open(filename, 'r') as f:
   str = f.read() # 'line 1\nline 2'
+  lines = str.splitlines() # ['line 1', 'line 2'], note for '\n' striped.
 
 with open(filename, 'r') as f:
   lines = []
@@ -17,7 +18,4 @@ with open(filename, 'r') as f:
 with open(filename, 'r') as f:
   lines = f.readlines() # ['line 1\n', 'line 2'], note for '\n' included.
 
-with open(filename, 'r') as f:
-  lines = f.read().splitlines() # ['line 1', 'line 2'], note for '\n' striped.
-
-remove(filename)
+os.remove(filename)

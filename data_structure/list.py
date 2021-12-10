@@ -29,3 +29,26 @@ arr.sort(key=lambda x: -x) # [3, 2, 1]
 d = [{'age': 3}, {'age': 4}]
 max(d, key=lambda p: p['age'])['age'] # 4
 min(d, key=lambda p: p['age'])['age'] # 3
+
+# tips
+len([1,2,3]) # 3
+[1,2] + [3,4] #[1,2,3,4]
+['a'] * 4 #['a', 'a', 'a', 'a']
+1 in [1,2] # True
+
+# operation
+l = [1]
+l.append(2) # l: [1,2]
+l.extend([2,3]) # l: [1,2,2,3]
+l.insert(2, 3) # l: [1,2,3,2,3]
+# [].pop() # raise error
+l.pop() # 3, l: [1,2,3,2]
+l.count(2) # 2
+l.index(2) # 1, first martched location
+# l.index('a') # error if not in the list.
+l.remove(2) # l: [1,3,2], remove the first matched.
+# l.remove('a') # raise error if doesn't have.
+
+l.reverse() # l: [2,3,1]
+l.copy() # [2,3,1]
+l.clear() # l: []

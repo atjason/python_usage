@@ -16,6 +16,7 @@
 'ab'.find('c') # -1
 'ab'.index('a') # 0
 'ab'.count('a') # 1
+'ab'.replace('a', 'c') # 'cb'
 
 # join
 ', '.join(['1', '2']) # '1, 2'
@@ -53,6 +54,9 @@
 str.format('{}', 1)
 '{}'.format(1)
 f'{1}'
+
+name = 'Tom'
+f'Hello {name}' # 'Hello Tom'
 
 # Accessing arguments by position:
 '{0}, {1}, {2}'.format('a', 'b', 'c') #'a, b, c'

@@ -102,6 +102,7 @@ coord = {'latitude': '37.24N', 'longitude': '-115.81W'}
 
 # Expressing a percentage:
 'Correct answers: {:.2%}'.format(19/22) # 'Correct answers: 86.36%'
+'Correct answers: {:.2f}'.format(19/22) # 'Correct answers: 0.86'
 
 # Using type-specific formatting:
 import datetime

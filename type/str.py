@@ -85,6 +85,8 @@ coord = {'latitude': '37.24N', 'longitude': '-115.81W'}
 '{:^30}'.format('centered')
 # '           centered           '
 '{:*^30}'.format('centered')  # use '*' as a fill char
+
+'{:2d}'.format(1) # ' 1'
 '***********centered***********'
 
 # Replacing %+f, %-f, and % f and specifying a sign:

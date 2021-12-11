@@ -10,6 +10,7 @@ pylint = "*"
 requests = "*"
 arrow = "*"
 aiohttp = "*"
+httpx = "*"
 
 [requires]
 python_version = "3.9"

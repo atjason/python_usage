@@ -1,7 +1,10 @@
 # https://arrow.readthedocs.io
 
 import arrow
-from datetime import datetime
+
+# built-in library
+# time: https://docs.python.org/3/library/time.html
+# datetime: https://docs.python.org/3/library/datetime.html
 
 # Creation
 arrow.utcnow() # <Arrow [2019-05-26T09:17:50.251399+00:00]>
@@ -18,7 +21,9 @@ arrow.get('2013-05-05T12:30:45')
 a = arrow.now()
 a.datetime
 a.timestamp
-a.year # etc
+# https://docs.python.org/3/library/datetime.html
+# year, month[1,12], day[1,31], hour[0,24), minute[0,60), second[0,60), weekday()[0,6, 0 for Monday]
+a.year
 
 # Replace & shift
 a = arrow.now()

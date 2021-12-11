@@ -9,7 +9,6 @@ arrow.now() # <Arrow [2019-05-26T17:17:52.683387+08:00]>
 arrow.now('America/New_York') # <Arrow [2019-05-26T05:18:41.305204-04:00]>
 
 arrow.get(1558862400)
-arrow.get('1558862400')
 arrow.get(1558862400.0)
 
 arrow.get('2013-05-05 12:30:45', 'YYYY-MM-DD HH:mm:ss')

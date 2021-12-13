@@ -27,3 +27,6 @@ while a < 3:
   a += 1
 else:
   print(a, 'is same with or bigger than 3.')
+
+for i, char in enumerate(['a', 'b']):
+  print(i, char)

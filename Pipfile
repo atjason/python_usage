@@ -12,6 +12,7 @@ arrow = "*"
 aiohttp = "*"
 httpx = "*"
 loguru = "*"
+python-box = "*"
 
 [requires]
 python_version = "3.9"

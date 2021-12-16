@@ -36,13 +36,18 @@ nested_namespace = NestedNamespace(d)
 
 print(nested_namespace.parent.child.grandchild)  # value
 print(nested_namespace.normal_key)  # normal value
+# print(nested_namespace.not_existed_key) # `AttributeError` Exception
 
 # 2. Box
 from box import Box
 
-b = Box(d)
+b = Box(d, default_box=True)
 print(b.parent.child.grandchild)  # value
 print(b.normal_key)  # normal value
+print(b.get('not_existed_key'))
+
+# Need to set`default_box=True`, otherwise will get `BoxKeyError` Exception
+print(b.not_existed_key)
 
 # b.to_json(filpath)
 filename = 'data/json_file.json'

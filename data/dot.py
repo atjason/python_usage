@@ -44,10 +44,11 @@ from box import Box
 b = Box(d, default_box=True)
 print(b.parent.child.grandchild)  # value
 print(b.normal_key)  # normal value
-print(b.get('not_existed_key'))
 
 # Need to set`default_box=True`, otherwise will get `BoxKeyError` Exception
 print(b.not_existed_key)
+if b.not_existed_key:
+  print('This should not print.')
 
 # b.to_json(filpath)
 filename = 'data/json_file.json'

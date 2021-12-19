@@ -18,7 +18,7 @@ os.rmdir('./a')
 print('\nPath')
 print(__file__) # full path
 print(os.path.abspath(__file__)) # full path
-print(os.path.basename(__file__)) # filname
+print(os.path.basename(__file__)) # filename
 print(os.path.dirname(__file__)) # current folder
 print(os.path.dirname(os.path.abspath(__file__))) # current folder
 

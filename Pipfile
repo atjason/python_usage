@@ -13,6 +13,7 @@ aiohttp = "*"
 httpx = "*"
 loguru = "*"
 python-box = "*"
+ta-lib = "*"
 
 [requires]
 python_version = "3.9"

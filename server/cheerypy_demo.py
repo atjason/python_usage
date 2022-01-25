@@ -10,5 +10,7 @@ class HelloWorld:
 
 # 在尝试将请求 URI 映射到对象时，CherryPy 始终以 `app.root` 开始，
 # 因此我们需要挂载请求处理程序根。 对 `'/'` 的请求将映射到 `HelloWorld().index()`。
-cherrypy.config.update({ 'server.socket_port': 8077 })
+cherrypy.config.update({ 
+    'server.socket_port': 8077,
+})
 cherrypy.quickstart(HelloWorld())

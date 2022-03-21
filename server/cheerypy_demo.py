@@ -12,5 +12,12 @@ class HelloWorld:
 # 因此我们需要挂载请求处理程序根。 对 `'/'` 的请求将映射到 `HelloWorld().index()`。
 cherrypy.config.update({ 
     'server.socket_port': 8077,
+    # 'log.screen': True,
+    # 'log.error_log.propagate': False,
+    # 'log.access_log.propagate': False,
+    # 'log.access_file': '',
+    # 'log.error_file': ''
 })
+# cherrypy.log.error_log.propagate = False
+# cherrypy.log.access_log.propagate = False
 cherrypy.quickstart(HelloWorld())

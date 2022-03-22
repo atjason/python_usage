@@ -24,6 +24,7 @@ def process_data(threadName, q):
       data = q.get()
       queueLock.release()
       print(threadName, "processing", data)
+      q.task_done()
     else:
       queueLock.release()
     time.sleep(1)

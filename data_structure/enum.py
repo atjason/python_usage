@@ -8,3 +8,10 @@ class Color(enum.Enum):
 
 color = Color.RED
 color == Color.RED
+
+class Types(str, enum.Enum):
+  type1 = "Type1"
+  type2 = "Type2"
+
+print(Types.type1.value)
+print(Types['type2'].value)

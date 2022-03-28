@@ -15,3 +15,6 @@ class Types(str, enum.Enum):
 
 print(Types.type1.value)
 print(Types['type2'].value)
+
+for type in Types:
+  print(type.name, type.value)

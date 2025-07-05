@@ -73,6 +73,16 @@ coord = {'latitude': '37.24N', 'longitude': '-115.81W'}
 # Accessing arguments’ items:
 'X: {0[0]};  Y: {0[1]}'.format((3, 5)) # 'X: 3;  Y: 5'
 
+# % Formatting with % operator:
+'Hi %s, your score is %d' % ('Tom', 82)
+# 'Hi Tom, your score is 82'
+'%2d-%02d' % (3, 1)
+# ' 3-01'
+'%.1f' % 3.1415926
+# '3.14'
+'%.1f%%' % 18.23
+# '18.2%'
+
 # Replacing %s and %r:
 "repr() shows quotes: {!r}; str() doesn't: {!s}".format('test1', 'test2')
 # "repr() shows quotes: 'test1'; str() doesn't: test2"

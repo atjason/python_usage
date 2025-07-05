@@ -6,6 +6,7 @@ dict['Name'] # 'Tom'
 
 # dict['Sex'] # raise error.
 dict.get('Sex') # None
+dict.get('Sex') or 'Man' # 'Man'
 dict.get('Sex', 'No value') # 'No value'
 
 'Sex' in dict # False

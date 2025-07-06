@@ -29,8 +29,8 @@ def f3(*args):
 
 f3(1, 2, 3)
 
-def f4(**args_dict):
-  for k,v in args_dict.items():
+def f4(**kv):
+  for k,v in kv.items():
     print(k, v)
 
 f4(name='Tom', age=3)
@@ -40,3 +40,13 @@ f4(name='Tom', age=3)
 sum = lambda a, b: a + b
 
 sum(1, 2) # 3
+
+# recursive
+
+def fact(n):
+  if n == 1:
+    return 1
+  else:
+    return n * fact(n - 1)
+
+print('5! =', fact(5)) # 120

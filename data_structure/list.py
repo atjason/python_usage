@@ -15,6 +15,8 @@ print(arr) # [1, 2]
 list(map(lambda n: n * 2, [0, 1, 2])) # [0, 2, 4]
 [n * 2 for n in [0, 1, 2]] # [0, 2, 4]
 
+[m + n for m in 'AB' for n in 'XY'] # ['AX', 'AY', 'BX', 'BY']
+
 # copy
 arr2 = arr[:]
 arr2 = arr.copy()

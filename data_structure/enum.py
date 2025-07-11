@@ -1,5 +1,11 @@
 import enum
 
+Month = enum.Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+
+m = Month.Jan
+print(m.name) # Jan
+print(m.value) # 1
+
 @enum.unique
 class Color(enum.Enum):
   RED = 1
